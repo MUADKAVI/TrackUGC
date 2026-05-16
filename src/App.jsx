@@ -166,7 +166,7 @@ function App() {
         <div className="hero-content">
           <h1>Stop managing UGC campaigns across Whatsapp, Sheets and Chaos.</h1>
           <p>
-            Track every creator, draft, approval, deadline, live link and winning formats from a single organized workspace.
+            Track every creator, draft, approval, deadline, live link and winning format from a single organized workspace.
           </p>
           <button className="cta-button" onClick={scrollToSignup}>
             Signup for waitlist <span>&gt;&gt;</span>
