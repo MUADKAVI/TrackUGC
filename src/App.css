@@ -84,17 +84,17 @@
 }
 
 .doodle-1 {
-  top: 20vh;
-  left: calc(50% - 38rem);
+  top: 17vh;
+  left: calc(50% - 35rem);
   width: 130px;
   transform: rotate(-10deg);
 }
 
 .doodle-2 {
   bottom: 20vh;
-  right: calc(50% - 37rem);
-  width: 130px;
-  transform: rotate(10deg);
+  right: calc(50% - 36rem);
+  width: 110px;
+  transform: rotate(-10deg);
 }
 
 .doodle-3 {
