@@ -31,7 +31,7 @@
   margin-bottom: 1.5rem;
   letter-spacing: -0.02em;
   color: #ffffff;
-  max-width: 80rem;
+  max-width: 70rem;
   /* Increased to fit 4-5 words per line */
   margin-left: auto;
   margin-right: auto;
@@ -71,7 +71,7 @@
 .img-doodle {
   position: absolute;
   mix-blend-mode: screen;
-  filter: contrast(1.5) brightness(0.7);
+  filter: contrast(1.5) brightness(1);
   /* Force the doodle bg to absolute black */
   z-index: 1;
   pointer-events: none;
