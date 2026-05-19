@@ -513,7 +513,19 @@ function App() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="monthlyWorth">2. What would software like this realistically be worth to your team monthly?</label>
+              <label htmlFor="headache">2. What's your biggest UGC workflow headache right now?</label>
+              <textarea
+                id="headache"
+                required
+                placeholder="What's your biggest pain right now?"
+                rows="4"
+                value={headache}
+                onChange={(e) => setHeadache(e.target.value)}
+              ></textarea>
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="monthlyWorth">3. What would software like this realistically be worth to your team monthly?</label>
               <select
                 id="monthlyWorth"
                 required
@@ -526,18 +538,6 @@ function App() {
                 <option value="$100–299/mo">$100–299/mo</option>
                 <option value="$300+/mo">$300+/mo</option>
               </select>
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="headache">3. What's your biggest UGC workflow headache right now?</label>
-              <textarea
-                id="headache"
-                required
-                placeholder="What's your biggest pain right now?"
-                rows="4"
-                value={headache}
-                onChange={(e) => setHeadache(e.target.value)}
-              ></textarea>
             </div>
 
             <button type="submit" className="cta-button submit-btn" disabled={isSubmitting}>
