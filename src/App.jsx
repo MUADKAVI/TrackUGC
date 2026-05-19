@@ -124,8 +124,6 @@ const STATUS_CLASSES = {
 
 function App() {
   const [email, setEmail] = useState('');
-  const [role, setRole] = useState('');
-  const [creatorsCount, setCreatorsCount] = useState('');
   const [monthlyWorth, setMonthlyWorth] = useState('');
   const [headache, setHeadache] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -142,8 +140,6 @@ function App() {
     try {
       await addDoc(collection(db, 'waitlist'), {
         email,
-        role,
-        creatorsCount,
         monthlyWorth,
         headache,
         timestamp: new Date()
@@ -517,40 +513,7 @@ function App() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="role">2. What best describes you?</label>
-              <select
-                id="role"
-                required
-                value={role}
-                onChange={(e) => setRole(e.target.value)}
-              >
-                <option value="" disabled>Select an option</option>
-                <option value="DTC Brand">DTC Brand</option>
-                <option value="UGC Agency">UGC Agency</option>
-                <option value="Marketing Team">Marketing Team</option>
-                <option value="Creator-Led Brand">Creator-Led Brand</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="creatorsCount">3. How many creators do you manage monthly?</label>
-              <select
-                id="creatorsCount"
-                required
-                value={creatorsCount}
-                onChange={(e) => setCreatorsCount(e.target.value)}
-              >
-                <option value="" disabled>Select an option</option>
-                <option value="1–5">1–5</option>
-                <option value="6–20">6–20</option>
-                <option value="21–50">21–50</option>
-                <option value="50+">50+</option>
-              </select>
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="monthlyWorth">4. What would software like this realistically be worth to your team monthly?</label>
+              <label htmlFor="monthlyWorth">2. What would software like this realistically be worth to your team monthly?</label>
               <select
                 id="monthlyWorth"
                 required
@@ -566,7 +529,7 @@ function App() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="headache">5. What's your biggest UGC workflow headache right now?</label>
+              <label htmlFor="headache">3. What's your biggest UGC workflow headache right now?</label>
               <textarea
                 id="headache"
                 required
